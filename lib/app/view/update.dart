@@ -48,8 +48,6 @@ class _UpdateUserState extends State<UpdateUser> {
 
                 if (updatedTitle.isNotEmpty) {
                   // Create an updatedTodo with the old value
-                  final oldTodo =
-                      todoProvider.getTodoByUsername(widget.username);
                   final updatedTodo = Todo(
                     title: updatedTitle,
                     isComplete: false,

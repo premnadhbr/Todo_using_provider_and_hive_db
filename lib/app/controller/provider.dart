@@ -20,16 +20,6 @@ class TodoProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  Todo? getTodoByUsername(String username) {
-    for (int index = 0; index < todoBox.length; index++) {
-      Todo todo = todoBox.getAt(index)!;
-      if (todo.title == username) {
-        return todo;
-      }
-    }
-    return null;
-  }
-
   void updateTodo(String username, Todo updatedTodo) {
     for (int index = 0; index < todoBox.length; index++) {
       Todo todo = todoBox.getAt(index)!;
