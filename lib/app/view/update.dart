@@ -52,7 +52,7 @@ class _UpdateUserState extends State<UpdateUser> {
                       todoProvider.getTodoByUsername(widget.username);
                   final updatedTodo = Todo(
                     title: updatedTitle,
-                    isComplete: oldTodo?.isComplete ?? false,
+                    isComplete: false,
                   );
 
                   // Use the todoProvider to update the todo
